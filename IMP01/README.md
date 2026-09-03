@@ -18,8 +18,9 @@ responsabilidades se incorporarán en la fase semántica.
 Se recomienda utilizar un entorno virtual:
 
 ```bash
-python -m venv .venv
-python -m pip install -r requirements.txt
+$ python -m venv .venv
+$ source .venv/bin/activate
+$ python -m pip install -r requirements.txt
 ```
 
 ## Ejecución
