@@ -11,6 +11,10 @@ generation.
 The compiler is implemented in **Python**. **Lark** supports lexical and syntax
 analysis, while the semantic checker and C code generator are implemented
 through explicit traversals of the compiler's intermediate representations.
+Command-line output and diagnostic messages are deliberately written in
+Spanish because this compiler is used in university courses in Mexico at the
+Universidad Autónoma de la Ciudad de México (**UACM**).
+
 The repository contains the base IMP compiler developed in the course notes;
 the IMP++ extensions belong to the student practice repositories.
 
