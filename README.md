@@ -1,13 +1,12 @@
-# IMP Compiler
+# IMP Compiler in Python
 
 Manuel Soto Romero
 
-This repository documents the incremental design and implementation of the
-**IMP compiler** for the imperative language presented by Glynn Winskel. It is
-the compiler project—which translates IMP programs to C—not the separate IMP
-interpreter project. Each version incorporates a complete compiler phase while
-preserving the components developed in previous versions, from lexical analysis
-to C code generation.
+This repository documents the incremental design and implementation of an
+**IMP compiler in Python** for the imperative language presented by Glynn
+Winskel. Each version incorporates a complete compiler phase while preserving
+the components developed in previous versions, from lexical analysis to C code
+generation.
 
 The compiler is implemented in **Python**. **Lark** supports lexical and syntax
 analysis, while the semantic checker and C code generator are implemented

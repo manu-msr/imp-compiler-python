@@ -1,10 +1,9 @@
-# Compilador de IMP 02 — Analizador sintáctico y AST
+# IMP Compiler 02 — Syntax Analysis and AST
 
-**Estado:** pendiente.
+**Status:** planned.
 
-Esta segunda fase del **compilador de IMP** conservará el lexer de IMP01 e
-incorporará la gramática, el parser y el árbol de sintaxis abstracta del IMP
-básico.
+This second phase of the **IMP compiler in Python** will preserve the lexer from
+IMP01 and add the grammar, parser, and abstract syntax tree for basic IMP.
 
-La versión deberá incluir ejemplos sintácticamente correctos, casos de error y
-pruebas de la estructura producida.
+This version will include syntactically valid examples, error cases, and tests
+for the resulting structure.

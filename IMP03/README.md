@@ -1,10 +1,9 @@
-# Compilador de IMP 03 — Análisis semántico
+# IMP Compiler 03 — Semantic Analysis
 
-**Estado:** pendiente.
+**Status:** planned.
 
-Esta tercera fase del **compilador de IMP** conservará IMP02 e incorporará la
-verificación semántica del IMP básico, incluidas las reglas de tipos y la
-información de símbolos y alcances que determine la especificación del curso.
+This third phase of the **IMP compiler in Python** will preserve IMP02 and add
+semantic verification for basic IMP, including type rules and the symbol and
+scope information defined by the course specification.
 
-La versión deberá probar programas correctos y errores semánticos
-representativos.
+This version will test valid programs and representative semantic errors.

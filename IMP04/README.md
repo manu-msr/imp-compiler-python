@@ -1,9 +1,9 @@
-# Compilador de IMP 04 — Generación de C e integración
+# IMP Compiler 04 — C Code Generation and Integration
 
-**Estado:** pendiente.
+**Status:** planned.
 
-Esta cuarta fase del **compilador de IMP** conservará IMP03 e incorporará la
-generación de código C y la integración del compilador del IMP básico.
+This fourth phase of the **IMP compiler in Python** will preserve IMP03 and add
+C code generation and integration of the complete compiler for basic IMP.
 
-La versión deberá incluir ejemplos cuyo C generado compile y se ejecute con el
-comportamiento esperado, además de pruebas del pipeline completo.
+This version will include examples whose generated C code compiles and runs
+with the expected behavior, as well as tests for the complete pipeline.

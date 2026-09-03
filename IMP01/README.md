@@ -1,63 +1,63 @@
-# Compilador de IMP 01 — Analizador léxico
+# IMP Compiler 01 — Lexical Analysis
 
-**Estado:** funcional.
+**Status:** complete.
 
-Esta es la primera fase del **compilador de IMP** básico de Winskel. Implementa
-el análisis léxico: recibe texto fuente y produce una secuencia de tokens con
-tipo, lexema, línea y columna. También construye una tabla léxica que reúne las
-apariciones de cada localidad (`LOC`).
+This is the first phase of the **IMP compiler in Python** for Winskel's basic
+language. It implements lexical analysis: it receives source text and produces
+a sequence of tokens containing type, lexeme, line, and column information. It
+also builds a lexical table that collects every occurrence of each location
+(`LOC`).
 
-La tabla de esta versión no comprueba declaraciones, tipos ni alcances. Esas
-responsabilidades se incorporarán en la fase semántica.
+The table in this version does not check declarations, types, or scopes. Those
+responsibilities will be introduced during the semantic analysis phase.
 
-## Requisitos
+## Requirements
 
-- Python 3.10 o posterior.
+- Python 3.10 or later.
 - Lark 1.2.2.
 
-Se recomienda utilizar un entorno virtual:
+Using a virtual environment is recommended:
 
 ```bash
-$ python -m venv .venv
-$ source .venv/bin/activate
-$ python -m pip install -r requirements.txt
+python -m venv .venv
+python -m pip install -r requirements.txt
 ```
 
-## Ejecución
+## Usage
 
-Desde esta carpeta:
+From this directory, run:
 
 ```bash
 python lexer.py ejemplos/ciclo.imp
 ```
 
-La salida muestra los tokens en orden y, al final, la tabla de localidades. El
-ejemplo debe producir 14 tokens y una entrada para `X` con cuatro apariciones.
+The output displays the tokens in order, followed by the location table. The
+example should produce 14 tokens and one entry for `X` with four occurrences.
 
-Para observar un error léxico:
+To see a lexical error:
 
 ```bash
 python lexer.py ejemplos/error_lexico.imp
 ```
 
-El programa termina con código 1 e informa el primer carácter no reconocido,
-su línea y su columna.
+The program exits with status code 1 and reports the first unrecognized
+character together with its line and column.
 
-## Pruebas
+## Tests
 
 ```bash
 python -m unittest -v
 ```
 
-Las pruebas comprueban el reconocimiento de IMP, el conflicto entre palabras
-reservadas y localidades, los operadores booleanos, la posición de los tokens,
-la reutilización de entradas en la tabla y los caracteres no reconocidos.
+The tests cover IMP recognition, the conflict between reserved words and
+locations, Boolean operators, token positions, table entry reuse, and
+unrecognized characters.
 
-## Archivos
+## Files
 
-- `imp.lark`: especificación de tokens y espacios omitidos.
-- `lexer.py`: controlador, interfaz de análisis y programa de línea de comandos.
-- `tabla_simbolos.py`: tabla léxica de localidades.
-- `ejemplos/`: entrada correcta y entrada con error.
-- `tests/`: pruebas automatizadas.
-- `requirements.txt`: versión de Lark utilizada.
+- `imp.lark`: token specification and ignored whitespace rules.
+- `lexer.py`: driver, analysis interface, and command-line program.
+- `tabla_simbolos.py`: lexical table for locations.
+- `ejemplos/`: valid input and an input containing a lexical error.
+- `tests/`: automated tests.
+- `requirements.txt`: required Lark version.
