@@ -1,4 +1,4 @@
-# Compilador de IMP
+# IMP Compiler
 
 Manuel Soto Romero
 
